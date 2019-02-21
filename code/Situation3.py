@@ -59,7 +59,7 @@ base = 32
 style_weight = 50
 content_weight = 1
 tv_weight = 1e-6
-epochs = 22
+epochs = 1000
 
 batch_size = 8
 width = 256
