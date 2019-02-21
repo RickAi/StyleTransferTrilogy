@@ -125,8 +125,8 @@ data_transform = transforms.Compose([
     tensor_normalizer
 ])
 
-style_dataset = torchvision.datasets.ImageFolder('/home/ypw/WikiArt/', transform=data_transform)
-content_dataset = torchvision.datasets.ImageFolder('/home/ypw/COCO/', transform=data_transform)
+style_dataset = torchvision.datasets.ImageFolder('/research/dept3/ybai/datasets/WikiArt/', transform=data_transform)
+content_dataset = torchvision.datasets.ImageFolder('/research/dept3/ybai/datasets/COCO/', transform=data_transform)
 
 if is_hvd:
     train_sampler = torch.utils.data.distributed.DistributedSampler(
